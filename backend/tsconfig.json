@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "sourceMap": false,
+    "moduleResolution" : "node",
+    "baseUrl": ".",
+    "paths": {
+        "*": [
+            "node_modules/"
+        ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.json"
+  ],
+  "exclude": [
+      "src/**/*.test.ts",
+      "src/**/*.test.js",
+  ]
+}

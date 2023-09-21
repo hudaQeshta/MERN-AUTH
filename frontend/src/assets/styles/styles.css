@@ -1,0 +1,46 @@
+.password-validations {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style: none;
+  padding-inline-start: 0 !important;
+}
+
+li.error::before {
+  content: '• ';
+  color: red;
+}
+
+li.success::before {
+  content: '• ';
+  color: green;
+}
+
+div.card div.card-title.h5.custom {
+  color: #80c1df;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+label.label {
+  margin-bottom: 0.5rem;
+  color: #80c1df;
+  font-weight: 700;
+}
+
+label.required:after {
+  content: '*';
+  color: red;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 1199px) {
+  .password-validations {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
