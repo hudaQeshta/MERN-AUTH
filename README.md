@@ -65,5 +65,3 @@ or
 - Version: 0.1.0
 - License: MIT
 - Author: Huda Qeshta
-
-# MERN-AUTH
