@@ -60,6 +60,7 @@ const SignUpPage = () => {
           msg: null,
         },
       })
+      signUpData['email'] = signUpData['email'].toLocaleLowerCase()
       signUpData['gender'] = signUpData['gender']
         ? signUpData['gender']
         : GENDERS['M']

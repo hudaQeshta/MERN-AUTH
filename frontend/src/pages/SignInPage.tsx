@@ -39,7 +39,9 @@ const SignInPage = () => {
 
   const handleOnSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    await dispatch(login({ ...signInFormData }))
+    let signInData = { ...signInFormData }
+    signInData['email'] = signInData['email'].toLocaleLowerCase()
+    await dispatch(login({ ...signInData }))
   }
 
   useEffect(() => {
